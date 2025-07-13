@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBot</title>
+</head>
+<body>
+    <h1>チャットボット</h1>
+    <form method="POST">
+        <textarea name="user_input" rows="4" cols="50" placeholder="メッセージを入力してください..."></textarea><br>
+        <input type="submit" value="送信">
+    </form>
+
+    {% if response %}
+        <h2>AIの返答:</h2>
+        <p>{{ response }}</p>
+    {% endif %}
+</body>
+</html>
